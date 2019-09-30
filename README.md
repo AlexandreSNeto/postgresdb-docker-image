@@ -23,7 +23,7 @@ docker run -d \
     -e DB_NAME=YOUR-DB-NAME \
     -e DB_USER=YOUR-USER \
     -e DB_PASS=USER-PASSWORD \
-    postgres-db
+    alexandresneto/postgres-db
 ```
 
 ## Full Example:
@@ -33,5 +33,7 @@ docker run -d \
     -e DB_NAME=vehiclestore \
     -e DB_USER=cardealer \
     -e DB_PASS=mustang67 \
-    -p 5432:5432 --name my-vehicle-store-db postgres-db
+    -p 5432:5432 \
+    --name my-vehicle-store-db \
+    alexandresneto/postgres-db
 ```
